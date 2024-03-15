@@ -9,7 +9,7 @@
 
 body {
     color: #fff;
-    background: #EB9888;
+    background: #CF251F;
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@ body {
 
 .navbar a:hover,
 .navbar a.active {
-    color: #277341;
+    color: #CF251F;
 }
 
 .main {
@@ -111,11 +111,11 @@ body {
 .home-content .start-btn {
     width: 190px;
     height: 55px;
-    background: #277341;
+    background: #E1B931;
     border: 2px solid #fff;
     outline: none;
     border-radius: 6px;
-    box-shadow: 0 0 10px #277341;
+    box-shadow: 0 0 10px #E1B931;
     font-size: 18px;
     color: #fff;
     letter-spacing: 1px;
@@ -125,7 +125,7 @@ body {
 }
 
 .home-content .start-btn:hover {
-    background-color: #EB9888;
+    background-color: #CF251F;
     box-shadow: none;
 }
 
@@ -152,7 +152,7 @@ body {
 
 .popup-info h2 {
     font-size: 50px;
-    color: #277341;
+    color: #E1B931;
 }
 
 .popup-info .info {
@@ -178,8 +178,8 @@ body {
     align-items: center;
     width: 130px;
     height: 45px;
-    background: #277341;
-    border: 2px solid #277341;
+    background: #E1B931;
+    border: 2px solid #E1B931;
     outline: none;
     border-radius: 6px;
     text-decoration: none;
@@ -193,25 +193,25 @@ body {
 
 .popup-info .btn-group .info-btn:nth-child(1) {
     background: transparent;
-    color: #277341;
+    color: #E1B931;
 }
 
 .popup-info .btn-group .info-btn:nth-child(1):hover {
-    background: #277341;
+    background: #E1B931;
     color: #fff;
 }
 
 .popup-info .btn-group .info-btn:nth-child(2):hover {
-    background: #950195;
+    background: #c59f25;
     color: #fff;
 }
 
 .quiz-section {
     width: 100%;
-    background: #EB9888;
+    background: #CF251F;
     position: relative;
-    /* left: -50%; */
-    left: 0;
+    left: -50%;
+    /* left: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -228,16 +228,102 @@ body {
     position: relative;
     width: 500px;
     background: transparent;
-    border: 2px solid #277341;
+    border: 2px solid #E1B931;
     border-radius: 6px;
     display: flex;
     flex-direction: column;
-    padding: 20px 30px;
+    padding: 10px 20px;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(.9);
+}
+
+.quiz-section .quiz-box.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+    transition: 1s ease;
+    transition-delay: 1s;
 }
 
 .quiz-box h1 {
     font-size: 32px;
     text-align: center;
-    background: linear-gradient(45deg, transparent, #277341, transparent);
+    background: linear-gradient(45deg, transparent, #E1B931, transparent);
     border-radius: 6px;
+}
+
+.quiz-box .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #E1B931;
+    margin-bottom: 30px;
+}
+
+.quiz-header span {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-header .header-score {
+    background: #E1B931;
+    border-radius: 3px;
+    padding: 7px;
+}
+
+.quiz-box .question-text {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.option-list .option {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 2px, solid rgba(225,225, 225, .2);
+    border-radius: 4px;
+    font-size: 17px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.option-list .option:hover {
+    background: rgba(225,225, 225, .1);
+    border-color: rgba(225,225, 225, .1);
+}
+
+.quiz-box .quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid #E1B931;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.quiz-footer .question-total {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.quiz-footer .next-btn {
+    width: 100px;
+    height: 45px;
+    background: rgba(225,225, 225, .1);
+    border: 2px solid rgba(225,225, 225, .1);
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: rgba(225,225, 225, .3);
+    font-weight: 600;
+    cursor: pointer;
+    /* pointer-events: none; */
+    transition: .5s;
+}
+
+.quiz-footer .next-btn:hover {
+    background: #c59f25;
+    border-color: #c59f25;
 }
