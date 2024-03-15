@@ -13,7 +13,7 @@ let questions = [
     {
         numb: 2,
         question: "When did World War II Begin?",
-        answer: "September 1, 1939",
+        answer: "D. September 1, 1939",
         options: [
             "A. November 19, 1900",
             "B. April 2, 1939",
@@ -24,7 +24,7 @@ let questions = [
     {
         numb: 3,
         question: "Nigeria gained its independence in?",
-        answer: "1960",
+        answer: "B. 1960",
         options: [
             "A. 1961",
             "B. 1960",
@@ -35,7 +35,7 @@ let questions = [
     {
         numb: 4,
         question: "The Genocide began in Rwanda when?",
-        answer: "April 1994",
+        answer: "A. April 1994",
         options: [
             "A. April 1994",
             "B. April 1995",
@@ -46,7 +46,7 @@ let questions = [
     {
         numb: 5,
         question: "Nelson Mandela became President when?",
-        answer: "1944 to 1999",
+        answer: "C. 1944 to 1999",
         options: [
             "A. 1944 to 1998",
             "B. 1941 to 1999",
